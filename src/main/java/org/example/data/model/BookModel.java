@@ -1,17 +1,14 @@
 package org.example.data.model;
 
+import java.util.List;
+
 public class BookModel {
     private String id;
     private String title;
     private String author;
+    private String description;
+    private List<String> tags;
     private String file_name;
-
-    public BookModel(String id, String title, String author, String file_name) {
-        this.id = id;
-        this.title = title;
-        this.author = author;
-        this.file_name = file_name;
-    }
 
     public BookModel() {
     }
@@ -40,12 +37,28 @@ public class BookModel {
         this.author = author;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getFile_name() {
         return file_name;
     }
 
     public void setFile_name(String file_name) {
         this.file_name = file_name;
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
     }
 }
 
